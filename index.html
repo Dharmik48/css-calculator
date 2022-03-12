@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="favicon.png"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class="main l">
+        <div class="modes l">
+            <i class="fas fa-sun unactive"></i>
+            <i class="fas fa-moon"></i>
+        </div>
+
+        <div class="display l">
+            <p class="history"></p>
+            <input type="text" class="number" value="0" placeholder="0">
+        </div>
+
+        <div class="btns l">
+            <div class="btn blue" data-value="back"><i class="fas fa-backspace"></i></div>
+            <div class="btn blue" data-value="**0.5"><i class="fas fa-square-root-alt"></i></div>
+            <div class="btn blue" data-value="**2"><i class="fas fa-superscript"></i></div>
+            <div class="btn red" data-value="/"><i class="fas fa-divide"></i></div>
+            <div class="btn white" data-number="7">7</div>
+            <div class="btn white" data-number="8">8</div>
+            <div class="btn white" data-number="9">9</div>
+            <div class="btn red" data-value="*"><i class="fas fa-times"></i></div>
+            <div class="btn white" data-number="4">4</div>
+            <div class="btn white" data-number="5">5</div>
+            <div class="btn white" data-number="6">6</div>
+            <div class="btn red" data-value="-"><i class="fas fa-minus"></i></div>
+            <div class="btn white" data-number="1">1</div>
+            <div class="btn white" data-number="2">2</div>
+            <div class="btn white" data-number="3">3</div>
+            <div class="btn red" data-value="+"><i class="fas fa-plus"></i></div>
+            <div class="btn white" data-value="clear">AC</div>
+            <div class="btn white" data-number="0">0</div>
+            <div class="btn white" data-number=".">.</div>
+            <div class="btn red" data-value="equals" id="equal"><i class="fas fa-equals"></i></div>
+        </div>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>

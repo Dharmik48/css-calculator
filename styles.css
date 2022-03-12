@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'jetbrains mono', sans-serif;
+    background-color: #dfdede;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    width: 100%;
+    color: #fff;
+}
+
+main {
+    position: relative;
+    background-color: #232323;
+    height: 535px;
+    width: 300px;
+    border-radius: 30px;
+    box-shadow: 0 5px 35px 0px #232323;
+    transition: 500ms ease;
+}
+
+.modes {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #2b2e2d;
+    padding: 5px 8px;
+    border-radius: 10px;
+    /* box-shadow: 0 0 5px 0px #2e2e2e; */
+    transition: 500ms ease;
+}
+
+.modes i:first-child {
+    margin-right: 5px; 
+}
+
+.modes i {
+    cursor: pointer;
+    transition: 300ms ease;
+}
+
+.unactive {
+    opacity: 0.1;
+    transform: scale(0.95);
+}
+
+/* INPUT AREA */
+
+.display {
+    height: 40%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-bottom: 20px;
+    padding-right: 15px;
+    text-align: right;
+    transition: 500ms ease;
+}
+
+.display input {
+    text-align: right;
+    font-size: 2rem;
+    background: transparent;
+    border: none;
+    outline: none;
+    max-width: 90%;
+    color: #fff;
+    font-family: inherit;
+    font-weight: 800;
+}
+
+.history {
+    font-weight: 800;
+}
+
+/* NUMBERS */
+
+.btns {
+    height: 60%;
+    width: 100%;
+    background-color: #2b2e2d;
+    border-radius: 30px;
+    padding: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(4, 50px);
+    grid-row-gap: 10px;
+    grid-column-gap: 20px;
+    padding-left: 20px;
+    padding-top: 18px;
+    transition: 500ms ease;
+}
+
+.btns .btn {
+    height: 50px;
+    width: 50px;
+    background-color: #232323;
+    box-shadow: 0 0px 8px 0px #232323;
+    border-radius: 10px;
+    display: grid;
+    place-items: center;
+    font-size: 1.2rem;
+    font-weight: 900;
+    cursor: pointer;
+    transform: 300ms ease;
+}
+
+.btn:active {
+    transform: scale(0.9);
+}
+
+.btn.red {
+    color: tomato;
+}
+
+.btn.blue {
+    color: aqua;
+}
+
+.btn i {
+    pointer-events: none;
+}
+
+/* Light */
+
+.modes.light {
+    background-color: #dfdede;
+}
+
+.modes.light i {
+    color: #232323;
+}
+
+.main.light {
+    background-color: #fff;
+}
+
+.display.light .history {
+    color: #232323;
+}
+
+.display.light input {
+    color: #232323;
+}
+
+.btns.light {
+    background-color: #dfdede;
+}
+
+.btns.light .btn {
+    background-color: #e6e6e6;
+    box-shadow: 0 0 10px #dfdede;
+    color: #232323;
+}
+
+.btns.light .btn.red {
+    color: tomato;
+}
+.btns.light .btn.blue {
+    color: rgb(27, 231, 231);
+}
